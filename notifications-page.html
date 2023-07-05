@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            @font-face {
+                font-family: "Plus Jakarta Sans Extra Bold";
+                src: url(fonts/static/PlusJakartaSans-ExtraBold.ttf);
+            }
+            @font-face {
+                font-family: "Plus Jakarta Sans Medium";
+                src: url(fonts/static/PlusJakartaSans-Medium.ttf);
+            }
+            @font-face {
+                font-family: "Plus Jakarta Sans VariableFont";
+                src: url(fonts/PlusJakartaSans-VariableFont_wght.ttf);
+            }
+
+
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                background-color: hsl(210, 60%, 98%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+           
+            .notifications-container{
+                background-color: white;
+                font-family: Plus Jakarta Sans VariableFont;
+                width: 600px;
+                position: absolute;
+                bottom: 30px;
+                top: 30px;
+                border-radius: 12px;
+                padding: 22px;
+                display: flex;
+                flex-direction: column;
+            }
+            .header{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+            }
+            .header-div1{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+            }
+            .header-div1 h4{
+                margin-right: 10px;
+                color: hsl(224, 21%, 14%)
+            }
+            .header-div1 button{
+                background-color: hsl(219, 85%, 26%);
+                color: white;
+                padding-left: px;
+                padding-right: px;
+                padding-top: px;
+                padding-bottom: px;
+                width: 25px;
+                height: 18px;
+                border-style: none;
+                border-radius: 3px;
+                font-family: Plus Jakarta Sans VariableFont;
+                font-size: 10px;
+            }
+            .header-div2{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                color: hsl(219, 12%, 42%);
+                font-size: 12px;
+            }
+            .unread-message{
+                font-size: 13px;
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                background-color: hsl(210, 60%, 98%);
+                border-radius: 4px;
+                margin-top: 7px;
+            }    
+            .profile-pic-container{
+                width: 35px;
+                height: 35px;
+                border-radius: 17.5px;
+            }
+            .profile-pic-container img{
+                height: 35px;
+                width: 35px;
+                object-fit: contain;
+            }
+            .details-container{
+                flex: 1;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .all-details{
+                display: flex;
+                flex-direction: column;
+                max-width: 450px;
+            }
+            .person{
+                color: hsl(224, 21%, 14%);
+                font-family: Plus Jakarta Sans Extra Bold;
+            }
+            .action{
+                margin-left: 5px;
+                color: hsl(219, 12%, 42%);
+                font-family: Plus Jakarta Sans VariableFont;
+            }
+            .subject{
+                margin-left: 5px;
+                color: hsl(219, 85%, 26%);
+                font-family: Plus Jakarta Sans Extra Bold;
+            }
+            .time{
+                color: hsl(219, 12%, 42%);
+                font-family: Plus Jakarta Sans VariableFont;
+            }
+            .read-message{
+                font-size: 12px;
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                border-radius: 4px;
+                margin-top: 7px;
+                position: relative;
+            }
+            .private-message-container{
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                padding: 10px;
+                border-radius: 4px;
+                margin-top: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: hsl(211, 68%, 94%);
+            }
+            .paragraph-div{
+                max-width: 380px;
+            }
+            .private-message-container p{
+                color: hsl(219, 12%, 42%);
+                font-family: Plus Jakarta Sans VariableFont;
+            }
+            
+            .commented-picture-container{
+                width: 35px;
+                height: 35px;
+                border-radius: 17.5px;
+                position: absolute;
+                right: 0;
+            }
+            
+            .commented-picture-container img{
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="notifications-container">
+            
+            
+            <div class="header">
+                <div class="header-div1"><h4>Notifications</h4> <button>3</button></div>
+                <div class="header-div2">Mark all as read</div>
+            </div>
+            
+            
+            <div class="unread-message">
+                
+                <div class="profile-pic-container">
+                    <img src="images\avatar-mark-webber.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Mark Webber</span><span class="action">reacted to your recent post</span><span class="subject">My first tournament today!</span></p>
+                    </div>
+                    
+                    <div class="time">1m ago</div>
+                
+                </div>
+            
+            </div>
+            
+            
+            <div class="unread-message">
+
+                <div class="profile-pic-container">
+                    <img src="images\avatar-angela-gray.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Angela Gray</span><span class="action">followed you</span></p>
+                    </div>
+                    
+                    <div class="time">5m ago</div>
+                
+                </div>
+            
+            </div>
+            
+            
+            <div class="unread-message">
+
+                <div class="profile-pic-container">
+                    <img src="images\avatar-jacob-thompson.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Jacob Thompson</span><span class="action">has joined your group</span><span class="subject">Chess Club</span></p>
+                    </div>
+                    
+                    <div class="time">1 day ago</div>
+                
+                </div>
+            
+            </div>
+            
+            
+            <div class="read-message">
+                <div class="profile-pic-container">
+                    <img src="images\avatar-rizky-hasanuddin.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Rizky Hasanuddin</span><span class="action">sent you a private message</span></p>
+                    </div>
+                    
+                    <div class="time">5days ago</div>
+                    <div class="private-message-container">
+                        <div class="paragraph-div">
+                            <p>
+                                Hello,thanks for setting up the chess club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game. 
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+            
+            <div class="read-message">
+                <div class="profile-pic-container">
+                    <img src="images\avatar-kimberly-smith.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Kimberly Smith</span><span class="action">commented on your picture</span></p>
+                    </div>
+                    
+                    <div class="time">1 week ago</div>
+                
+                </div>
+                
+                <div class="commented-picture-container">
+                    <img src="images\image-chess.webp" alt="">
+                </div>
+            
+            </div>
+            
+            
+            <div class="read-message">
+                <div class="profile-pic-container">
+                    <img src="images\avatar-nathan-peterson.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Nathan Peterson</span><span class="action">reacted to your recent post</span><span class="subject">5 end-game strategies to increase your win rate</span></p>
+                    </div>
+                    
+                    <div class="time">2 weeks ago</div>
+                
+                </div>
+            </div>
+            
+            
+            <div class="read-message">
+                <div class="profile-pic-container">
+                    <img src="images\avatar-anna-kim.webp" alt="">
+                </div>
+                
+                
+                <div class="details-container">
+                    
+                    <div class="all-details">
+                        <p><span class="person">Anna Kim</span><span class="action">left the group</span><span class="subject">Chess Club</span></p>
+                    </div>
+                    
+                    <div class="time">2 weeks ago</div>
+                
+                </div>
+            </div>
+        
+        
+        </div>
+    </body>
+</html>
