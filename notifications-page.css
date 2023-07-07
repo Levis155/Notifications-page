@@ -77,6 +77,9 @@ body{
     color: hsl(219, 12%, 42%);
     font-size: 12px;
 }
+.header-div2:hover{
+    cursor: pointer;
+}
 .unread-message{
     font-size: 13px;
     display: flex;
@@ -90,6 +93,9 @@ body{
     width: 35px;
     height: 35px;
     border-radius: 17.5px;
+}
+.profile-pic-container:hover{
+    cursor: pointer;
 }
 .profile-pic-container img{
     height: 35px;
@@ -121,6 +127,17 @@ body{
     color: hsl(219, 85%, 26%);
     font-family: Plus Jakarta Sans Extra Bold;
 }
+.subject:hover{
+    cursor: pointer;
+}
+.subject-read{
+    margin-left: 5px;
+    color: hsl(219, 14%, 63%);
+    font-family: Plus Jakarta Sans Extra Bold;
+}
+.subject-read:hover{
+    cursor: pointer;
+}
 .time{
     color: hsl(219, 12%, 42%);
     font-family: Plus Jakarta Sans VariableFont;
@@ -144,9 +161,13 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: hsl(211, 68%, 94%);
+    background-color: hsl(210, 60%, 98%);
 }
 .paragraph-div{
     max-width: 380px;
+}
+.private-message-container:hover{
+    cursor: pointer;
 }
 .private-message-container p{
     color: hsl(219, 12%, 42%);
@@ -159,6 +180,9 @@ body{
     border-radius: 17.5px;
     position: absolute;
     right: 0;
+}
+.commented-picture-container:hover{
+    cursor: pointer;
 }
 
 .commented-picture-container img{
