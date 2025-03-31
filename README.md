@@ -1,6 +1,6 @@
 # Description
 
-A project from frontendmentor.io that featuring a well structured notifications page
+A project from frontendmentor.io featuring a well structured notifications page
 
 # Interface
 
